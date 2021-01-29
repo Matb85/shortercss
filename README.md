@@ -1,6 +1,6 @@
-# CSS Terser - a Gulp plugin for uglifying/minifying css selectors' names, written in Typescript.
+# CSS Terser - An Open Source Solution for uglifying/minifying css selectors
 
-# This project is based on [gulp-selectors](https://github.com/cazzer/gulp-selectors/)
+# This project continues the idea of [gulp-selectors](https://github.com/cazzer/gulp-selectors/)
 
 > Minify those pesky selector names down to nothing with this fancy gulp plugin. Minified selectors will be applied consistently across all files piped into it.
 
