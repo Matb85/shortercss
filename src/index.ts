@@ -1,5 +1,3 @@
-"use strict";
-// import processorUtils from "./utils/processor-utils";
 import Library, { LibraryInstance } from "./utils/library";
 import _ from "lodash";
 import appRoot from "app-root-path";

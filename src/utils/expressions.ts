@@ -5,7 +5,7 @@ function stylesheetSel(char) {
 }
 /**
  * Some awesome expressions that I'll explain in a bit.
- * Test these dope boats live on http://scriptular.com/ to make your life easier.
+ * Test these dope boats live on https://regex101.com/ to make your life easier.
  */
 export default {
   /**

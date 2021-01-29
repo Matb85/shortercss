@@ -2,7 +2,7 @@
 
 # This project continues the idea of [gulp-selectors](https://github.com/cazzer/gulp-selectors/)
 
-> Minify those pesky selector names down to nothing with this fancy gulp plugin. Minified selectors will be applied consistently across all files piped into it.
+> Minify those pesky selector names down to nothing with this fancy projects. Minified selectors will be applied consistently across all files piped into it.
 
 | Input                                               | Output                                 |
 | --------------------------------------------------- | -------------------------------------- |
@@ -19,8 +19,9 @@ _You're like: `.some-super-descriptive-selector-name {...}`, and it's like: `.a 
 
 1. First and foremost: `npm i -D shortercss`
 
-2. Create a shortercss.config.js file and put some options:
-   see (the available options)[#config]
+2. Create a shortercss.config.js file and put some options: see [the available options](#config)
+
+> shortercss.config.js is a file from which ShorterCSS gets its config
 
 ```js
 // shortercss.config.js
@@ -30,7 +31,7 @@ module.exports = {
 };
 ```
 
-1. create a ShorterCSS instace and run it on a string:
+3. create a ShorterCSS instace and run it on a string:
 
 ```js
 const ShorterCSS = require("shortercss");
@@ -125,7 +126,7 @@ interface LibraryInstance {
 }
 ```
 
-Still not sure? Jump into the (project's src folder)[https://github.com/Matb85/shortercss/tree/master/src], or raise an (issue)[https://github.com/Matb85/shortercss/issues]!
+Still not sure? Jump into the [project's src folder](https://github.com/Matb85/shortercss/tree/master/src), or raise an [issue](https://github.com/Matb85/shortercss/issues)!
 
 #### Creating processors
 
@@ -139,11 +140,11 @@ Of course, you don't have to rely on the built-in processors. Just create a func
 - css (built-in)
 - jsStrings (built-in)
 
-**Have you created a processor? Share it with us** :smiley:
+[**Have you created a processor? Share it with us** :smiley:](https://github.com/Matb85/gulp-shortercss/pulls)
 
-### ShorterCSS for task runners/bundlers
+### Use ShorterCSS with a task runner/bundler
 
-- Gulp: [gulp-shortercss][1]
+- A Gulp plugin: [gulp-shortercss][1]
 
 ### Contributing
 
