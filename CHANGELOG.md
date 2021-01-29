@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/Matb85/css-terser/compare/v1.5.0...v2.0.0) (2021-01-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* change typescript target to ES6
+
+### Features
+
+* change typescript target to ES6 ([4192917](https://github.com/Matb85/css-terser/commit/4192917a67e014425b5eae47522c9c1794b184a9))
+
 ## [1.5.0](https://github.com/Matb85/css-terser/compare/v0.5.1...v1.5.0) (2021-01-29)
 
 ### [0.5.1](https://github.com/Matb85/css-terser/compare/v0.5.0...v0.5.1) (2021-01-29)
