@@ -33,7 +33,7 @@ module.exports = {
 1. create a ShorterCSS instace and run it on a string:
 
 ```js
-const ShorterCSS = require("css-terser");
+const ShorterCSS = require("shortercss");
 
 const Instance = new ShorterCSS();
 
@@ -44,7 +44,7 @@ const reducedCode = Instance.processors[yourProcessor](code, Instance.classLibra
 console.log(reducedCode);
 ```
 
-by default Css Terser will look at the root of your project for the config file. If you don't like this you can either:
+by default ShorterCSS will look at the root of your project for the config file. If you don't like this you can either:
 
 - specify path to the shortercss.config.js if it's in a different directory
 
@@ -62,15 +62,15 @@ const Instance = new ShorterCSS({
 
 ### Config
 
-Css Terser is fully configurable. Here's the scheme:
+ShorterCSS is fully configurable. Here's the scheme:
 
 ```js
 // shortercss.config.js
 
 // first import the processors - html, css and js-strings are built-in
-const html = require("css-terser/dist/processors/html.js").default;
-const css = require("css-terser/dist/processors/css.js").default;
-const jsStrings = require("css-terser/dist/processors/js-strings.js").default;
+const html = require("shortercss/dist/processors/html.js").default;
+const css = require("shortercss/dist/processors/css.js").default;
+const jsStrings = require("shortercss/dist/processors/js-strings.js").default;
 // Of course you can use your own ones
 const yourProcessor = require("path/to/your/processor");
 
