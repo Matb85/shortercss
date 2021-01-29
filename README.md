@@ -19,33 +19,50 @@ _You're like: `.some-super-descriptive-selector-name {...}`, and it's like: `.a 
 
 1. First and foremost: `npm i -D css-terser`
 
-2. Create a Gulp task:
+2. Create a cssterser.config.js file and put some options:
+   see (the available options)[#config]
 
 ```js
-const { src, dest } = require("gulp");
-// setting up the plugin: running the init methos with a path to the config file as an argument
-const Selectors = require("../../dist").init("/test/example/cssterser.config.js");
+// cssterser.config.js
 
-exports.default = function() {
-  return (
-    src(["index.html", "style.css", "script.js"])
-      // running
-      .pipe(Selectors.run())
-      // outputing some info regarding selectors that have been minified - OPTIONAL
-      .pipe(Selectors.info())
-      .pipe(dest("./dist"))
-  );
+module.exports = {
+  /*config*/
 };
 ```
 
-3. add some options. You can put them in one of these places:
+1. create a CssTerser instace and run it on a string:
 
-- cssterser.config.js at the root of your project.
-- directly as argument in the init method
+```js
+const CssTerser = require("css-terser");
 
-### Options
+const Instance = new CssTerser();
 
-Sure, the plugin is fully configurable. Here's the scheme:
+const code = `<h1 class="some__class"></h1>`;
+
+const reducedCode = Instance.processors[yourProcessor](code, Instance.classLibrary, Instance.idLibrary);
+
+console.log(reducedCode);
+```
+
+by default Css Terser will look at the root of your project for the config file. If you don't like this you can either:
+
+- specify path to the cssterser.config.js if it's in a different directory
+
+```js
+const Instance = new CssTerser("path/to/cssterser.config.js");
+```
+
+- put your config as a function's argument:
+
+```ts
+const Instance = new CssTerser({
+  /*config*/
+});
+```
+
+### Config
+
+Css Terser is fully configurable. Here's the scheme:
 
 ```js
 // cssterser.config.js
