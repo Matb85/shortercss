@@ -6,10 +6,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const library_1 = __importDefault(require("./utils/library"));
 const lodash_1 = __importDefault(require("lodash"));
 const app_root_path_1 = __importDefault(require("app-root-path"));
-module.exports = class CssTerser {
+module.exports = class ShorterCSS {
     constructor(config) {
         if (typeof config === "undefined")
-            config = require(app_root_path_1.default + "/cssterser.config.js");
+            config = require(app_root_path_1.default + "/shortercss.config.js");
         if (typeof config === "string")
             config = require(app_root_path_1.default + config);
         this.ignores = lodash_1.default.extend({ classes: [], ids: [] }, config.ignores);
