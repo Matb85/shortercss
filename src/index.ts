@@ -29,7 +29,7 @@ module.exports = class ShorterCSS {
   classLibrary: LibraryInstance;
   idLibrary: LibraryInstance;
   constructor(config: Config) {
-    if (typeof config === "undefined") config = require(appRoot + "/cssterser.config.js");
+    if (typeof config === "undefined") config = require(appRoot + "/shortercss.config.js");
     if (typeof config === "string") config = require(appRoot + config);
 
     // ensure processor names are set as expected
