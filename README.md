@@ -141,12 +141,17 @@ Of course, you don't have to rely on the built-in processors. Just create a func
 
 **Have you created a processor? Share it with us** :smiley:
 
+### ShorterCSS for task runners/bundlers
+
+- Gulp: [gulp-shortercss][1]
+
 ### Contributing
 
 Sure, if you think you can improve this project, go ahead! But, just three little things:
 
-- use [Typescript][1] where possible
-- follow [Conventional Commit's specification][2]
+- use [Typescript][2] where possible
+- follow [Conventional Commit's specification][3]
 
-[1]: https://www.typescriptlang.org/
-[2]: https://www.conventionalcommits.org/en/v1.0.0/
+[1]: https://github.com/Matb85/gulp-shortercss
+[2]: https://www.typescriptlang.org/
+[3]: https://www.conventionalcommits.org/en/v1.0.0/

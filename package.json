@@ -40,11 +40,11 @@
   "author": {
     "name": "Matb85"
   },
-  "homepage": "https://github.com/Matb85/css-terser",
-  "bugs": "https://github.com/Matb85/css-terser/issues",
+  "homepage": "https://github.com/Matb85/shortercss",
+  "bugs": "https://github.com/Matb85/shortercss/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Matb85/css-terser.git"
+    "url": "https://github.com/Matb85/shortercss.git"
   },
   "keywords": [
     "gulp",
