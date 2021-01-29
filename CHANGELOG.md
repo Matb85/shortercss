@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/Matb85/css-terser/compare/v2.0.0...v2.1.0) (2021-01-29)
+
+
+### Features
+
+* rename to ShorterCSS ([fbe75d1](https://github.com/Matb85/css-terser/commit/fbe75d1df74526e3ce0af9feb4d0fa85889b7420))
+
+
+### Bug Fixes
+
+* paths to the config file ([4b19453](https://github.com/Matb85/css-terser/commit/4b194537cd023aff5efd35c08becb9d073dcba38))
+* README update ([a0cc1bc](https://github.com/Matb85/css-terser/commit/a0cc1bc0cb53bffb150b0bcc33cebaaa6d986946))
+* README update ([56a9533](https://github.com/Matb85/css-terser/commit/56a95337f00d6d5e963c2f72c7f261f2b7e3a162))
+* README update ([9d2f047](https://github.com/Matb85/css-terser/commit/9d2f047f870f83d112680733526014ad74155f2f))
+
 ## [2.0.0](https://github.com/Matb85/shortercss/compare/v1.5.0...v2.0.0) (2021-01-29)
 
 ### ⚠ BREAKING CHANGES
