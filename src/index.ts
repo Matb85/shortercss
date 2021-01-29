@@ -2,8 +2,6 @@
 // import processorUtils from "./utils/processor-utils";
 import Library, { LibraryInstance } from "./utils/library";
 import _ from "lodash";
-import { map } from "event-stream";
-import utils from "gulp-util";
 import appRoot from "app-root-path";
 
 export type ProcessorFunction = (file: string, classLibrary: LibraryInstance, idLibrary: LibraryInstance) => string;
@@ -24,7 +22,7 @@ export interface Config {
   ignores: IgnoresType;
 }
 
-class CssTerser {
+module.exports = class CssTerser {
   ignores: IgnoresType;
   processors: Processors;
   bindings: Bindings;
@@ -42,41 +40,4 @@ class CssTerser {
     this.classLibrary = new Library(this.ignores.classes);
     this.idLibrary = new Library(this.ignores.ids);
   }
-
-  run() {
-    /** Main task for mini selectors uglify classes. Processes files based on type.
-     * @param file Stream from es.map
-     * @param callback for es.map */
-    const miniSelectors = (file, callback) => {
-      const extensions = file.path.split(".");
-      const extension = extensions[extensions.length - 1];
-      let reducedFile = String(file.contents);
-
-      for (const binding in this.bindings) {
-        if (this.bindings[binding].includes(extension)) {
-          reducedFile = this.processors[binding](reducedFile, this.classLibrary, this.idLibrary);
-        }
-      }
-      file.contents = Buffer.from(reducedFile);
-      callback(null, file);
-    };
-
-    return map(miniSelectors);
-  }
-
-  info() {
-    return map((file, callback) => {
-      utils.log(file.history[0]);
-      utils.log("Class library:", this.classLibrary.stats());
-      utils.log("ID library:", this.idLibrary.stats());
-      callback(null, file);
-    });
-  }
-}
-
-module.exports = {
-  CssTerser,
-  init(config: Config): CssTerser {
-    return new CssTerser(config);
-  },
 };

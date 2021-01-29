@@ -128,8 +128,7 @@ Of course, you don't have to rely on the built-in processors. Just create a func
 
 Sure, if you think you can improve this project, go ahead! But, just three little things:
 
-- use [Typescript][1]
-- follow ESlint's suggestions
+- use [Typescript][1] where possible
 - follow [Conventional Commit's specification][2]
 
 [1]: https://www.typescriptlang.org/

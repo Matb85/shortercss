@@ -1,6 +1,6 @@
 {
   "name": "css-terser",
-  "description": "A Gulp plugin for uglifying/minifying css selectors' names",
+  "description": "An Open Source Solution for uglifying/minifying css selectors",
   "version": "0.4.1",
   "main": "./dist/index.js",
   "types": "index.d.ts",
