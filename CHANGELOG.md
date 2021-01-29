@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/Matb85/css-terser/compare/v0.4.1...v0.5.0) (2021-01-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* split the project into to units: css-terser (the base) & gulp-css-terser (a gulp plugin)
+
+### Features
+
+* split the project into to units: css-terser (the base) & gulp-css-terser (a gulp plugin) ([f67c8b2](https://github.com/Matb85/css-terser/commit/f67c8b255a2ebbf7a259610ddf23049072219fd7))
+
+
+### Bug Fixes
+
+* package.json update ([afd9fd2](https://github.com/Matb85/css-terser/commit/afd9fd27a76a987eefd51c8477298f1f68ec418f))
+
 ### [0.4.1](https://github.com/Matb85/css-terser/compare/v0.4.0...v0.4.1) (2021-01-28)
 
 

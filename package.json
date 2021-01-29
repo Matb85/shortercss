@@ -1,7 +1,7 @@
 {
   "name": "css-terser",
   "description": "An Open Source Solution for uglifying/minifying css selectors",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "main": "./dist/index.js",
   "types": "index.d.ts",
   "scripts": {
