@@ -1,7 +1,7 @@
 {
   "name": "shortercss",
   "description": "An Open Source Solution for shortening/obfuscating CSS selectors",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "main": "./dist/index.js",
   "types": "index.d.ts",
   "scripts": {

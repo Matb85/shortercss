@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/Matb85/shortercss/compare/v2.1.0...v2.1.1) (2021-01-29)
+
+
+### Bug Fixes
+
+* README UPDATE ([f95fb24](https://github.com/Matb85/shortercss/commit/f95fb24ba5dd4053e3ed43914e29c7d73cf233e4))
+* README update + clear up unnecessary ([d96f2d9](https://github.com/Matb85/shortercss/commit/d96f2d97461570e3fdf4aa2eb0d4f214a44137c9))
+
 ## [2.1.0](https://github.com/Matb85/css-terser/compare/v2.0.0...v2.1.0) (2021-01-29)
 
 
