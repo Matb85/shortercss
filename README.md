@@ -1,4 +1,4 @@
-# CSS Terser - An Open Source Solution for uglifying/minifying css selectors
+# ShorterCSS - An Open Source Solution for shortening/obfuscating CSS selectors
 
 # This project continues the idea of [gulp-selectors](https://github.com/cazzer/gulp-selectors/)
 
@@ -17,25 +17,25 @@ _You're like: `.some-super-descriptive-selector-name {...}`, and it's like: `.a 
 
 ## Setup
 
-1. First and foremost: `npm i -D css-terser`
+1. First and foremost: `npm i -D shortercss`
 
-2. Create a cssterser.config.js file and put some options:
+2. Create a shortercss.config.js file and put some options:
    see (the available options)[#config]
 
 ```js
-// cssterser.config.js
+// shortercss.config.js
 
 module.exports = {
   /*config*/
 };
 ```
 
-1. create a CssTerser instace and run it on a string:
+1. create a ShorterCSS instace and run it on a string:
 
 ```js
-const CssTerser = require("css-terser");
+const ShorterCSS = require("css-terser");
 
-const Instance = new CssTerser();
+const Instance = new ShorterCSS();
 
 const code = `<h1 class="some__class"></h1>`;
 
@@ -46,16 +46,16 @@ console.log(reducedCode);
 
 by default Css Terser will look at the root of your project for the config file. If you don't like this you can either:
 
-- specify path to the cssterser.config.js if it's in a different directory
+- specify path to the shortercss.config.js if it's in a different directory
 
 ```js
-const Instance = new CssTerser("path/to/cssterser.config.js");
+const Instance = new ShorterCSS("path/to/shortercss.config.js");
 ```
 
 - put your config as a function's argument:
 
 ```ts
-const Instance = new CssTerser({
+const Instance = new ShorterCSS({
   /*config*/
 });
 ```
@@ -65,7 +65,7 @@ const Instance = new CssTerser({
 Css Terser is fully configurable. Here's the scheme:
 
 ```js
-// cssterser.config.js
+// shortercss.config.js
 
 // first import the processors - html, css and js-strings are built-in
 const html = require("css-terser/dist/processors/html.js").default;
@@ -99,7 +99,7 @@ module.exports = {
 
 ### Processors
 
-CSS Terser relies on processors. Processors are just functions that follow the scheme below:
+ShorterCSS relies on processors. Processors are just functions that follow the scheme below:
 
 ```ts
 function(file: string, classLibrary: LibraryInstance, idLibrary: LibraryInstance): string {
@@ -125,7 +125,7 @@ interface LibraryInstance {
 }
 ```
 
-Still not sure? Jump into the (project's src folder)[https://github.com/Matb85/css-terser/tree/master/src], or raise an (issue)[https://github.com/Matb85/css-terser/issues]!
+Still not sure? Jump into the (project's src folder)[https://github.com/Matb85/shortercss/tree/master/src], or raise an (issue)[https://github.com/Matb85/shortercss/issues]!
 
 #### Creating processors
 

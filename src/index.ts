@@ -22,7 +22,7 @@ export interface Config {
   ignores: IgnoresType;
 }
 
-module.exports = class CssTerser {
+module.exports = class ShorterCSS {
   ignores: IgnoresType;
   processors: Processors;
   bindings: Bindings;

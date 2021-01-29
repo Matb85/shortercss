@@ -1,7 +1,7 @@
 import { IgnoresType, Processors, Bindings, Config } from "./src/index";
 import { LibraryInstance } from "./src/utils/library";
 
-export default class CssTerser {
+export default class ShorterCSS {
   ignores: IgnoresType;
   processors: Processors;
   bindings: Bindings;
